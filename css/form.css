@@ -6,58 +6,99 @@ Remember to use something like type-scale.com
 to get your font sizes
 *******************************************/
 *{
-	padding:0;
+	padding: 0;
 	margin: 0;
 }
-html,body{
 
+html, body {
+    font-size: 62.5%;
 }
-h1{
 
+h1 {
+    color: #97acbf;
+    font: small-caps 400 6.864rem berkshire-swash, cursive;
+    text-shadow: 4px 4px 13px hsl(53, 100%, 90%);
+    padding-bottom: 10px;    
 }
-h2{
 
+h2 {
+    color: #ffd8d6;
+    font: 700 4.236rem/1.5 aclonica, sans-serif;
+    
 }
-p{
 
+p {
+    font: 400 2.618rem/1.5 baumans, sans-serif;
+    color: #b1b39f;
 }
 
 /*******************************************
 				Layout
 *******************************************/
-.wrapper{
-	
+
+.wrapper {
+	text-align: center;
+    margin: 0 auto;
 }
-.masthead{
-	
+
+.masthead {
+    background: url(https://unsplash.it/1500/210?image=421);
 }
-.main{
-	
+
+.main {
+    
 }
-.foot{
-	
+
+.foot {
+    background: url(https://unsplash.it/1500/210?image=421);
 }
 
 /*******************************************
 				Form Styles
 *******************************************/
-.formBox{
-	
+
+.formBox {
+	text-align: center;
+    margin: 0 auto;
+    padding-top: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 500px;
 }
-.buttons{
-	
+
+.col .buttons {
+	margin: 0 auto;
+    color: blue;
 }
-label{
-	
+
+label {
+	margin: 0 auto;
+    padding-top: 1.618rem;
+    font: 700 1.618rem baumans, sans-serif;
+    display: block;
+    max-width: 200px;
+    height: 30px;
+    color: #7f6665;
 }
+
 input[type=text],
 input[type=number],
-input[type=date]{
-	
+input[type=date] {
+	font: 400 1.618rem baumans, sans-serif;
+    width: 200px;
+    margin: 7px;
+    text-align: center;
+    border-radius: 5px;
 }
+
 input[type=submit],
-input[type=reset]{
-	
+input[type=reset] {
+	font: 400 1.618rem baumans, sans-serif;
+    width: 200px;
+    margin: 7px;
+    color: ;
+    border-radius: 5px;
+    
 }
 
 
