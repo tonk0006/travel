@@ -22,14 +22,14 @@ h1 {
 }
 
 h2 {
-    color: #ffd8d6;
+    color: #b1b39f;
     font: 700 4.236rem/1.5 aclonica, sans-serif;
     
 }
 
 p {
     font: 400 2.618rem/1.5 baumans, sans-serif;
-    color: #b1b39f;
+    color: #97acbf;
 }
 
 /*******************************************
@@ -66,9 +66,8 @@ p {
     max-width: 500px;
 }
 
-.col .buttons {
+.buttons {
 	margin: 0 auto;
-    color: blue;
 }
 
 label {
@@ -78,7 +77,7 @@ label {
     display: block;
     max-width: 200px;
     height: 30px;
-    color: #7f6665;
+    color: #646650;
 }
 
 input[type=text],
@@ -96,9 +95,9 @@ input[type=reset] {
 	font: 400 1.618rem baumans, sans-serif;
     width: 200px;
     margin: 7px;
-    color: ;
     border-radius: 5px;
-    
+    color: #fff;
+    background: #b1b39f;
 }
 
 
@@ -106,3 +105,36 @@ input[type=reset] {
 				Image Styles
 *******************************************/
 
+/*
+
+ICONS ARE from the OPEN ICONIC, OPEN SOURCE & FREE ICON SET, AVAILABLE at:
+
+https://useiconic.com/open/.
+
+*/
+
+#departure, #destination { 
+	background: url(../open-iconic/svg/globe.svg) no-repeat 10px;
+}
+
+#departure_dt, #return_dt {
+	background: url(../open-iconic/svg/calendar.svg) no-repeat 10px;
+    text-indent: 23px;
+}
+
+#num_adults {
+	background: url(../open-iconic/svg/people.svg) no-repeat 10px;
+	height: 30px;
+	width: 70px;
+	text-indent: 23px;
+}
+
+#max { 
+	background: url(../open-iconic/svg/dollar.svg) no-repeat 10px;
+    text-indent: 23px;
+}
+
+svg {
+  width: 36px;
+  height: 36px;
+}

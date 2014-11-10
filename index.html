@@ -8,10 +8,13 @@
 </head>
 <body>
 	<div class="wrapper">
+        
 		<header class="masthead">
 			<h1>Romantic Getaways</h1>
 		</header>
+        
 		<section class="main">
+            
 			<h2>Find yourself a perfect getaway</h2>
 			<p>Fly anywhere you wish to, see below our best deals.</p>
 			<form name="travelForm" id="travelForm" action="#" method="post" enctype="application/x-www-form-urlencoded">
@@ -35,7 +38,7 @@
 				</div>
 				
 				<div class="col">
-					<label for="num_adults">Number of Adults:</label>
+					<label for="num_adults" id="number">Number of Adults:</label>
 					<!--<input type="number" name="num_adults" id="num_adults" min="1" max="10" step="1" />-->
 					 
 					<select name="num_adults" id="num_adults">
@@ -52,10 +55,11 @@
 					</select>
 					
 				</div>
+                
 				<div class="col">
-					<label for="price" title=""Max. price per person>Max. Price</label>
+                    <label for="price" title="Max. price per person" id="max">Max Price per Person:</label>
 					<input type="range" name="price" id="price" min="100" max="2000" value="1000"/>
-				</div>
+				</div>  
 				
 				<div class="col buttons">
 					<input type="reset" name="btnReset" id="btnReset" value="Reset" />
@@ -64,7 +68,7 @@
 			</form>
 		</section>
 		<footer class="foot">
-			<p>&copy; 2014 Chicken Stuff Inc.</p>
+			<p>&copy; 2014 Romantic Stuff Inc.</p>
 		</footer>
 	</div>
 	<script src="js/main.js"></script>
