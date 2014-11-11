@@ -204,6 +204,7 @@ https://useiconic.com/open/.
     
     input[type=submit],
     input[type=reset] {
-         flex: 1 1 25%;   
+        flex: 1 1 25%;
+        margin-bottom: 2rem;
     }
 }
