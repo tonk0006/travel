@@ -3,8 +3,19 @@
                     Defaults
 *******************************************/
 * {
-	padding: 0;
-	margin: 0;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 html, body {
@@ -58,7 +69,6 @@ p {
     background: url(https://unsplash.it/1500/210?image=421);
     height: 5.5rem;
     padding-top: 2.3rem;
-    
 }
 
 /*******************************************
@@ -68,8 +78,6 @@ p {
 .formBox {
 	text-align: center;
     margin: 0 auto;
-    display: flex;
-    flex-flow: row wrap;
     max-width: 250px;
 }
 
@@ -90,10 +98,10 @@ label {
 input[type=text],
 input[type=number],
 input[type=date] {
-	font: 400 1.618rem baumans, sans-serif;
+	margin: 0 auto;
+    font: 400 1.618rem baumans, sans-serif;
     width: 250px;
     height: 30px;
-    margin: 7px;
     text-align: center;
     border-radius: 5px;
     background: #fff;
@@ -110,6 +118,7 @@ input[type=reset] {
     text-shadow: 4px 4px 13px hsl(53, 100%, 90%);
     background: #b1b39f;
     margin: 10px;
+    margin-bottom: 3.5rem;
 }
 
 #price-slider {
@@ -118,7 +127,6 @@ input[type=reset] {
     width: 220px;
     height: 15px;
     background: radial-gradient(#ffd8d6, #7f6665);
-    
     border: none;
     outline: none;
 }
@@ -172,39 +180,65 @@ https://useiconic.com/open/.
             Responsive Design
 *******************************************/
 
-@media all and (min-width: 501px) and (max-width: 765px) {
+@media all and (min-width: 501px) and (max-width: 780px) {
 
     .formBox {
-	    max-width: 500px;
+        margin: 0 auto;
+        float: left;
     }    
 
+     label {
+         margin: 0 auto;
+         clear: both;
+     }
+    
     input[type=text],
     input[type=number],
     input[type=date] {
-        width: 250px;
-    }
-}
-
-@media all and (min-width: 766px) {
-
-    .formBox {
-	display: flex;
-    flex-flow: row;
-    max-width: 500px;
-}
-    label {
-	   flex: 1 1 25%;
-}
-
-    input[type=text],
-    input[type=number],
-    input[type=date] {
-	   flex: 1 1 25%;
+        margin: 0 auto;
+        clear: both;
+        width: 200px;
+        margin: 20px;
     }
     
     input[type=submit],
     input[type=reset] {
-        flex: 1 1 25%;
-        margin-bottom: 2rem;
+        width: 200px;
+        clear: both;
+    }
+    
+}
+
+@media all and (min-width: 781px) {
+
+    .formBox {
+        margin: 0 auto;
+        float: left;
+        margin-left: 20px;
+        margin-top: 55px;
+        margin-bottom: 55px;
+    }
+    
+    .formBox:first-child {
+        margin-left: 13%;
+        
+    }
+    
+    label {
+        clear: both;
+        
+}
+    .col{
+        
+    }
+    input[type=text],
+    input[type=number],
+    input[type=date] {
+        clear: both;
+    }
+    
+    input[type=submit],
+    input[type=reset] {
+        clear: both;
     }
 }
