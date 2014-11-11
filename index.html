@@ -1,10 +1,16 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="UTF-8">
+    <meta name="handheldfriendly">
+    <meta name="mobileoptimized">
+    <meta name="viewport" content="width=device-width">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="//use.edgefonts.net/berkshire-swash;aclonica;baumans.js"></script>
+    <link rel="stylesheet" href="css/form.css">
+   
     <title>Responsive Travel Form</title>
-	<link rel="stylesheet" href="css/form.css" />
-    <script src="//use.edgefonts.net/berkshire-swash;aclonica;baumans;bubblegum-sans.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -21,20 +27,20 @@
 				
 				<div class="formBox">
 					<label for="departure">Departure City:</label>
-					<input type="text" name="departure" id="departure" placeholder="departure city" />
+					<input type="text" name="departure" id="departure" placeholder="departure city" required autocomplete="on" />
 				</div>
 				<div class="formBox">
 					<label for="destination">Destination City:</label>
-					<input type="text" name="destination" id="destination" placeholder="destination city" />
+					<input type="text" name="destination" id="destination" placeholder="destination city" required autocomplete="on" />
 				</div>
 				
 				<div class="formBox">
 					<label for="departure_dt">Departure Date:</label>
-					<input type="date" name="departure_dt" id="departure_dt" placeholder="" />
+					<input type="date" name="departure_dt" id="departure_dt" placeholder="" required autocomplete="on"/>
 				</div>
 				<div class="formBox">
 					<label for="return_dt">Return Date:</label>
-					<input type="date" name="return_dt" id="return_dt" placeholder="" />
+					<input type="date" name="return_dt" id="return_dt" placeholder="" required autocomplete="on" />
 				</div>
 				
 				<div class="col">
@@ -58,7 +64,10 @@
                 
 				<div class="col">
                     <label for="price" title="Max. price per person" id="max">Max Price per Person:</label>
-					<input type="range" name="price" id="price" min="100" max="2000" value="1000"/>
+					<!--<input type="range" name="price" id="price" min="100" max="2000" value="1000"/>-->
+                    <div id="price"></div>
+                    <input type="text" id="text-value" readonly />
+                    
 				</div>  
 				
 				<div class="col buttons">

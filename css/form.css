@@ -1,11 +1,8 @@
 
 /*******************************************
-				Defaults
-
-Remember to use something like type-scale.com 
-to get your font sizes
+                    Defaults
 *******************************************/
-*{
+* {
 	padding: 0;
 	margin: 0;
 }
@@ -24,16 +21,23 @@ h1 {
 h2 {
     color: #b1b39f;
     font: 700 4.236rem/1.5 aclonica, sans-serif;
+    text-shadow: 1px 1px 20px rgba(150, 150, 153, 0.5);
     
 }
 
 p {
     font: 400 2.618rem/1.5 baumans, sans-serif;
+    text-shadow: 1px 1px 20px rgba(150, 150, 153, 0.5);
     color: #97acbf;
 }
 
+.foot p {
+    text-shadow: 4px 4px 13px hsl(53, 100%, 90%);
+    font: 700 2.118rem/1.5 aclonica, sans-serif;
+}
+
 /*******************************************
-				Layout
+                    Layout
 *******************************************/
 
 .wrapper {
@@ -46,24 +50,27 @@ p {
 }
 
 .main {
-    
+    margin: 0 auto;
+    /*background: linear-gradient(hsla(3, 100%, 92%, 0.2), hsla(208, 24%, 67%, 0.4));*/
 }
 
 .foot {
     background: url(https://unsplash.it/1500/210?image=421);
+    height: 5.5rem;
+    padding-top: 2.3rem;
+    
 }
 
 /*******************************************
-				Form Styles
+                Form Styles
 *******************************************/
 
 .formBox {
 	text-align: center;
     margin: 0 auto;
-    padding-top: 2rem;
     display: flex;
     flex-flow: row wrap;
-    max-width: 500px;
+    max-width: 250px;
 }
 
 .buttons {
@@ -75,7 +82,7 @@ label {
     padding-top: 1.618rem;
     font: 700 1.618rem baumans, sans-serif;
     display: block;
-    max-width: 200px;
+    max-width: 250px;
     height: 30px;
     color: #646650;
 }
@@ -84,25 +91,48 @@ input[type=text],
 input[type=number],
 input[type=date] {
 	font: 400 1.618rem baumans, sans-serif;
-    width: 200px;
+    width: 250px;
+    height: 30px;
     margin: 7px;
     text-align: center;
     border-radius: 5px;
+    background: #fff;
 }
 
 input[type=submit],
 input[type=reset] {
 	font: 400 1.618rem baumans, sans-serif;
-    width: 200px;
+    width: 250px;
+    height: 30px;
     margin: 7px;
     border-radius: 5px;
     color: #fff;
+    text-shadow: 4px 4px 13px hsl(53, 100%, 90%);
     background: #b1b39f;
+    margin: 10px;
 }
 
+#price {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 220px;
+    height: 15px;
+    background: #7f6665;
+    border: none;
+    outline: none;
+}
+
+#text-value {
+    font: 400 1.618rem baumans, sans-serif;
+    width: 250px;
+    border: none;
+    color: #97acbf;
+    height: 30px;
+    margin-top: 20px;
+}
 
 /*******************************************
-				Image Styles
+                Image Styles
 *******************************************/
 
 /*
@@ -114,11 +144,13 @@ https://useiconic.com/open/.
 */
 
 #departure, #destination { 
-	background: url(../open-iconic/svg/globe.svg) no-repeat 10px;
+	background: rgba(177, 179, 159, 0.33);
+    background: url(../open-iconic/svg/globe.svg) no-repeat 10px;
 }
 
 #departure_dt, #return_dt {
-	background: url(../open-iconic/svg/calendar.svg) no-repeat 10px;
+	background: rgba(177, 179, 159, 0.33);
+    background: url(../open-iconic/svg/calendar.svg) no-repeat 10px;
     text-indent: 23px;
 }
 
@@ -131,10 +163,39 @@ https://useiconic.com/open/.
 
 #max { 
 	background: url(../open-iconic/svg/dollar.svg) no-repeat 10px;
-    text-indent: 23px;
 }
 
-svg {
-  width: 36px;
-  height: 36px;
+/*******************************************
+            Responsive Design
+*******************************************/
+
+@media all and (min-width: 501px) and (max-width: 765px) {
+
+    .formBox {
+	    max-width: 500px;
+    }    
+
+    input[type=text],
+    input[type=number],
+    input[type=date] {
+        width: 250px;
+    }
+}
+
+@media all and (min-width: 766px) {
+
+    .formBox {
+	display: flex;
+    flex-flow: row;
+    max-width: 500px;
+}
+    label {
+	   flex: 1 1 25%;
+}
+
+    input[type=text],
+    input[type=number],
+    input[type=date] {
+	   flex: 1 1 25%;
+    }
 }
