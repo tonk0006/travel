@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", init);
 
 function init() {
     $(function() {
-        $( "#price" ).slider({
+        $( "#price-slider" ).slider({
             range: true,
             min: 100,
             max: 2000,
@@ -12,6 +12,6 @@ function init() {
         $( "#text-value" ).val( "$" + ui.value );
               }
         });
-        $( "#text-value" ).val( "$" + $( "#price" ).slider( "value" ) );
+        $( "#text-value" ).val( "$" + $( "#price-slider" ).slider( "value" ) );
       });
 }   

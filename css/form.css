@@ -112,18 +112,21 @@ input[type=reset] {
     margin: 10px;
 }
 
-#price {
+#price-slider {
     margin: 0 auto;
     margin-top: 20px;
     width: 220px;
     height: 15px;
-    background: #7f6665;
+    background: radial-gradient(#ffd8d6, #7f6665);
+    
     border: none;
     outline: none;
 }
 
+.ui-slider-horizontal .ui-state-default {background: radial-gradient(#ffd8d6, #7f6665)}
+
 #text-value {
-    font: 400 1.618rem baumans, sans-serif;
+    font: 400 1.618rem aclonica, sans-serif;
     width: 250px;
     border: none;
     color: #97acbf;
@@ -197,5 +200,10 @@ https://useiconic.com/open/.
     input[type=number],
     input[type=date] {
 	   flex: 1 1 25%;
+    }
+    
+    input[type=submit],
+    input[type=reset] {
+         flex: 1 1 25%;   
     }
 }
