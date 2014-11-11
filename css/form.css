@@ -182,8 +182,13 @@ https://useiconic.com/open/.
 
 @media all and (min-width: 501px) and (max-width: 780px) {
 
-    .formBox {
+    .main {
         margin: 0 auto;
+        width: 500px;
+    }
+    
+    .formBox {
+        margin-left: 5px;
         float: left;
     }    
 
@@ -210,20 +215,21 @@ https://useiconic.com/open/.
 }
 
 @media all and (min-width: 781px) {
-
-    .formBox {
+    
+    .main {
         margin: 0 auto;
+        width: 1080px;
+    }
+    
+    .formBox {
+        margin-left: 15px;
         float: left;
-        margin-left: 20px;
+        
         margin-top: 55px;
         margin-bottom: 55px;
     }
     
-    .formBox:first-child {
-        margin-left: 13%;
-        
-    }
-    
+
     label {
         clear: both;
         
