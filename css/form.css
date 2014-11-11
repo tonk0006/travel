@@ -224,7 +224,6 @@ https://useiconic.com/open/.
     .formBox {
         margin-left: 15px;
         float: left;
-        
         margin-top: 55px;
         margin-bottom: 55px;
     }
@@ -234,9 +233,6 @@ https://useiconic.com/open/.
         clear: both;
         
 }
-    .col{
-        
-    }
     input[type=text],
     input[type=number],
     input[type=date] {
