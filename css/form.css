@@ -127,7 +127,7 @@ input[type=reset] {
     outline: none;
 }
 
-.ui-slider-horizontal .ui-state-default {background: radial-gradient(#ffd8d6, #7f6665)}
+.ui-slider-horizontal .ui-state-default {background: radial-gradient(#ffd8d6, #7f6665); width: 20px; height: 20px;}
 
 #text-value {
     font: 400 1.618rem aclonica, sans-serif;
