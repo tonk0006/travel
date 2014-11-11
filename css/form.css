@@ -214,7 +214,37 @@ https://useiconic.com/open/.
     
 }
 
-@media all and (min-width: 781px) {
+@media all and (min-width: 781px) and (max-width: 1080px){
+    
+    .main {
+        margin: 0 auto;
+        width: 780px;
+    }
+    
+    .formBox {
+        margin-left: 95px;
+        float: left;
+        margin-top: 55px;
+    }
+    
+
+    label {
+        clear: both;
+        
+}
+    input[type=text],
+    input[type=number],
+    input[type=date] {
+        clear: both;
+    }
+    
+    input[type=submit],
+    input[type=reset] {
+        clear: both;
+    }
+}
+
+@media all and (min-width: 1081px) {
     
     .main {
         margin: 0 auto;
