@@ -62,7 +62,6 @@ p {
 
 .main {
     margin: 0 auto;
-    /*background: linear-gradient(hsla(3, 100%, 92%, 0.2), hsla(208, 24%, 67%, 0.4));*/
 }
 
 .foot {
@@ -81,9 +80,6 @@ p {
     max-width: 250px;
 }
 
-.buttons {
-	margin: 0 auto;
-}
 
 label {
 	margin: 0 auto;
@@ -172,9 +168,7 @@ https://useiconic.com/open/.
 	text-indent: 23px;
 }
 
-#max { 
-	background: url(../open-iconic/svg/dollar.svg) no-repeat 10px;
-}
+#max { background: url(../open-iconic/svg/dollar.svg) no-repeat 10px; }
 
 /*******************************************
             Responsive Design
@@ -182,95 +176,50 @@ https://useiconic.com/open/.
 
 @media all and (min-width: 501px) and (max-width: 780px) {
 
-    .main {
-        margin: 0 auto;
-        width: 500px;
-    }
+    .main { margin: 0 auto; width: 500px; }
     
-    .formBox {
-        margin-left: 5px;
-        float: left;
-    }    
+    .formBox { margin-left: 5px; float: left; }    
 
-     label {
-         margin: 0 auto;
-         clear: both;
-     }
+    label { margin: 0 auto; clear: both; }
     
     input[type=text],
     input[type=number],
-    input[type=date] {
-        margin: 0 auto;
-        clear: both;
-        width: 200px;
-        margin: 20px;
-    }
+    input[type=date] { margin: 0 auto; clear: both; width: 200px; margin: 20px; }
     
     input[type=submit],
-    input[type=reset] {
-        width: 200px;
-        clear: both;
-    }
+    input[type=reset] { width: 200px; clear: both; }
     
 }
 
 @media all and (min-width: 781px) and (max-width: 1080px){
     
-    .main {
-        margin: 0 auto;
-        width: 780px;
-    }
+    .main { margin: 0 auto; width: 780px; }
     
-    .formBox {
-        margin-left: 95px;
-        float: left;
-        margin-top: 55px;
-    }
+    .formBox { margin-left: 95px; float: left; margin-top: 55px; }
     
-
-    label {
-        clear: both;
-        
-}
+    label { clear: both; }
+    
     input[type=text],
     input[type=number],
-    input[type=date] {
-        clear: both;
-    }
+    input[type=date] { clear: both; }
     
     input[type=submit],
-    input[type=reset] {
-        clear: both;
-    }
+    input[type=reset] { clear: both; }
+    
 }
 
 @media all and (min-width: 1081px) {
     
-    .main {
-        margin: 0 auto;
-        width: 1080px;
-    }
+    .main { margin: 0 auto; width: 1080px; }
     
-    .formBox {
-        margin-left: 15px;
-        float: left;
-        margin-top: 55px;
-        margin-bottom: 55px;
-    }
+    .formBox { margin-left: 15px; float: left; margin-top: 55px; margin-bottom: 55px; }
     
-
-    label {
-        clear: both;
-        
-}
+    label { clear: both; }
+    
     input[type=text],
     input[type=number],
-    input[type=date] {
-        clear: both;
-    }
+    input[type=date] { clear: both; }
     
     input[type=submit],
-    input[type=reset] {
-        clear: both;
-    }
+    input[type=reset] { clear: both; }
 }
