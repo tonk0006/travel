@@ -122,12 +122,12 @@ input[type=reset] {
     margin-top: 20px;
     width: 220px;
     height: 15px;
-    background: rgba(128, 128, 128, 0.19);
+    background: radial-gradient(#97acbf, hsla(2, 11%, 45%, 0.64));
     border: none;
     outline: none;
 }
 
-.ui-slider-horizontal .ui-state-default {background: radial-gradient(#ffd8d6, #7f6665); width: 20px; height: 20px;}
+.ui-slider-horizontal .ui-state-default {background: radial-gradient(#ffd8d6, hsla(2, 11%, 45%, 0.64)); width: 20px; height: 20px;}
 
 #text-value {
     font: 400 1.618rem aclonica, sans-serif;
