@@ -199,7 +199,7 @@ https://useiconic.com/open/.
     
     .main { margin: 0 auto; width: 780px; }
     
-    .formBox { margin-left: 95px; float: left; margin-top: 55px; }
+    .formBox { margin-left: 95px; float: left; margin-top: 20px; }
     
     label { clear: both; }
     
@@ -226,4 +226,11 @@ https://useiconic.com/open/.
     
     input[type=submit],
     input[type=reset] { clear: both; }
+}
+
+@media all and (min-width: 1501px) {
+
+    .masthead { background: url(https://unsplash.it/2560/210?image=421); }
+
+    .foot { background: url(https://unsplash.it/2560/210?image=421); }
 }
