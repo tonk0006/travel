@@ -126,7 +126,6 @@ input[type=reset] {
     text-shadow: 4px 4px 13px hsl(53, 100%, 90%);
     background: #b1b39f;
     margin: 10px;
-    margin-bottom: 3.6rem;
 }
 
 #price-slider {
