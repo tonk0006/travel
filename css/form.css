@@ -114,7 +114,7 @@ input[type=reset] {
     text-shadow: 4px 4px 13px hsl(53, 100%, 90%);
     background: #b1b39f;
     margin: 10px;
-    margin-bottom: 3.5rem;
+    margin-bottom: 3.6rem;
 }
 
 #price-slider {
@@ -127,7 +127,11 @@ input[type=reset] {
     outline: none;
 }
 
-.ui-slider-horizontal .ui-state-default {background: radial-gradient(#ffd8d6, hsla(2, 11%, 45%, 0.64)); width: 20px; height: 20px;}
+.ui-slider-horizontal .ui-state-default {
+    background: radial-gradient(#ffd8d6, hsla(2, 11%, 45%, 0.64));
+    width: 20px;
+    height: 20px;
+}
 
 #text-value {
     font: 400 1.618rem aclonica, sans-serif;
