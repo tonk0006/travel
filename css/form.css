@@ -265,7 +265,11 @@ https://useiconic.com/open/.
 
     .masthead { background: url(https://unsplash.it/2560/110?image=421); }
     
-    h2 { margin-top: 6rem; }
+    h2 { margin-top: 4rem; }
+    
+    p { margin-top: 4rem; }
+    
+    .foot p { margin-top: 0; }
     
     .foot { background: url(https://unsplash.it/2560/110?image=421); }
 }
