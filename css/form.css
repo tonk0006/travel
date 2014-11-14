@@ -264,6 +264,10 @@ https://useiconic.com/open/.
 @media all and (min-width: 1501px) {
 
     .masthead { background: url(https://unsplash.it/2560/110?image=421); }
+    
+    h2 { margin-top: 6rem; }
+    
+    .main { position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto; }
 
     .foot { background: url(https://unsplash.it/2560/110?image=421); }
 }
