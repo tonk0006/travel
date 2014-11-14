@@ -42,6 +42,7 @@ h2 {
     color: #b1b39f;
     font: 700 3.375rem/1.5 aclonica, sans-serif;
     text-shadow: 0.1rem 0.1rem 2rem hsla(240, 1%, 59%, 0.5);
+    margin-top: 2rem;
 }
 
 p {
@@ -127,7 +128,7 @@ input[type=reset] {
 
 input[type=submit]:last-child,
 input[type=reset]:last-child {
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
 }
 
 #price-slider {
@@ -152,7 +153,8 @@ input[type=reset]:last-child {
     border: none;
     color: #97acbf;
     height: 3rem;
-    margin-top: 2rem;
+    margin-top: 3.2rem;
+    margin-bottom: 1.8rem;
     background: transparent; 
 }
 
@@ -217,7 +219,7 @@ https://useiconic.com/open/.
     
     .main { width: 80%; }
     
-    .formBox { float: left; width: 25%; margin-top: 6rem; margin-bottom: 5rem;}
+    .formBox { float: left; width: 25%; margin-top: 4rem; margin-bottom: 4rem;}
     
     label { clear: both; width: 100%}
         
@@ -226,9 +228,7 @@ https://useiconic.com/open/.
     input[type=date] { clear: both; width: 90% }
     
     input[type=submit]:last-child,
-    input[type=reset]:last-child {
-    margin-bottom: 5rem;
-}
+    input[type=reset]:last-child { margin-bottom: 5rem; }
     
     #price-slider { width: 30%; }
     
@@ -239,6 +239,8 @@ https://useiconic.com/open/.
 }
 
 @media all and (min-width: 1081px) {
+    
+    .formBox { margin-bottom: 2rem;}
     
     h1 { font-size: 6.854rem; }
 
