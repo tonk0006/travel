@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  margin-bottom: 5.5rem;
+  margin-bottom: 6rem;
 }
 
 html, body {
@@ -33,27 +33,28 @@ html, body {
 
 h1 {
     color: #97acbf;
-    font: small-caps 400 6.864rem berkshire-swash, cursive;
+    font: small-caps 400 6.063rem berkshire-swash, cursive;
     text-shadow: 4px 4px 13px hsl(53, 100%, 90%);
-    padding-bottom: 10px;    
+    padding-bottom: 1rem;    
 }
 
 h2 {
     color: #b1b39f;
-    font: 700 4.236rem/1.5 aclonica, sans-serif;
-    text-shadow: 1px 1px 20px rgba(150, 150, 153, 0.5);
+    font: 700 3.375rem/1.5 aclonica, sans-serif;
+    text-shadow: 0.1rem 0.1rem 2rem hsla(240, 1%, 59%, 0.5);
     
 }
 
 p {
-    font: 400 2.618rem/1.5 baumans, sans-serif;
-    text-shadow: 1px 1px 20px rgba(150, 150, 153, 0.5);
+    font: 400 2.25rem/1.5 baumans, sans-serif;
+    text-shadow: 0.1rem 0.1rem 2rem hsla(240, 1%, 59%, 0.5);
     color: #97acbf;
 }
 
 .foot p {
-    text-shadow: 4px 4px 13px hsl(53, 100%, 90%);
-    font: 700 2.118rem/1.5 aclonica, sans-serif;
+    font: 700 1.5rem/1.5 aclonica, sans-serif;
+    text-shadow: 0.4rem 0.4rem 1.3rem hsl(53, 100%, 90%);
+    padding-top: 2rem;
 }
 
 /*******************************************
@@ -77,9 +78,8 @@ p {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 5.5rem;
+    height: 6rem;
     background: url(https://unsplash.it/1500/210?image=421);
-    padding-top: 2.3rem;
 }
 
 /*******************************************
@@ -89,17 +89,16 @@ p {
 .formBox {
 	text-align: center;
     margin: 0 auto;
-    max-width: 250px;
+    max-width: 100%;
 }
-
 
 label {
 	margin: 0 auto;
     padding-top: 1.618rem;
     font: 700 1.618rem baumans, sans-serif;
     display: block;
-    max-width: 250px;
-    height: 30px;
+    width: 70%;
+    height: 3rem;
     color: #646650;
 }
 
@@ -108,8 +107,8 @@ input[type=number],
 input[type=date] {
 	margin: 0 auto;
     font: 400 1.618rem baumans, sans-serif;
-    width: 250px;
-    height: 30px;
+    width: 80%;
+    height: 3rem;
     text-align: center;
     border-radius: 5px;
     background: #fff;
@@ -118,21 +117,26 @@ input[type=date] {
 input[type=submit],
 input[type=reset] {
 	font: 400 1.618rem baumans, sans-serif;
-    width: 250px;
-    height: 30px;
-    margin: 7px;
-    border-radius: 5px;
+    width: 70%;
+    height: 3rem;
+    margin: 0.7rem;
+    border-radius: 0.5rem;
     color: #fff;
-    text-shadow: 4px 4px 13px hsl(53, 100%, 90%);
+    text-shadow: 0.4rem 0.4rem 1.3rem hsl(53, 100%, 90%);
     background: #b1b39f;
-    margin: 10px;
+    margin: 1rem;
+}
+
+input[type=submit]:last-child,
+input[type=reset]:last-child {
+    margin-bottom: 5rem;
 }
 
 #price-slider {
     margin: 0 auto;
-    margin-top: 20px;
-    width: 220px;
-    height: 15px;
+    margin-top: 2rem;
+    width: 60%;
+    height: 1.5rem;
     background: radial-gradient(#97acbf, hsla(2, 11%, 45%, 0.64));
     border: none;
     outline: none;
@@ -140,17 +144,17 @@ input[type=reset] {
 
 .ui-slider-horizontal .ui-state-default {
     background: radial-gradient(#ffd8d6, hsla(2, 11%, 45%, 0.64));
-    width: 20px;
-    height: 20px;
+    width: 2rem;
+    height: 2rem;
 }
 
 #text-value {
     font: 400 1.618rem aclonica, sans-serif;
-    width: 250px;
+    width: 50%;
     border: none;
     color: #97acbf;
-    height: 30px;
-    margin-top: 20px;
+    height: 3rem;
+    margin-top: 2rem;
 }
 
 /*******************************************
@@ -167,12 +171,12 @@ https://useiconic.com/open/.
 
 #departure, #destination { 
 	background: rgba(177, 179, 159, 0.33);
-    background: url(../open-iconic/svg/globe.svg) no-repeat 10px;
+    background: url(../open-iconic/svg/globe.svg) no-repeat 1rem;
 }
 
 #departure_dt, #return_dt {
 	background: rgba(177, 179, 159, 0.33);
-    background: url(../open-iconic/svg/calendar.svg) no-repeat 10px;
+    background: url(../open-iconic/svg/calendar.svg) no-repeat 1rem;
     text-indent: 23px;
 }
 
@@ -183,7 +187,7 @@ https://useiconic.com/open/.
 	text-indent: 23px;
 }
 
-#max { background: url(../open-iconic/svg/dollar.svg) no-repeat 10px; }
+#max { background: url(../open-iconic/svg/dollar.svg) no-repeat 10%; }
 
 /*******************************************
             Responsive Design
@@ -191,57 +195,63 @@ https://useiconic.com/open/.
 
 @media all and (min-width: 501px) and (max-width: 780px) {
 
-    .main { margin: 0 auto; width: 500px; }
+    /*.main { width: 500px; }*/
     
-    .formBox { margin-left: 5px; float: left; }    
+    .formBox { float: left; width: 45%; margin: 2.5%;}    
 
-    label { margin: 0 auto; clear: both; }
+    label { clear: both; width: 70%; }
     
     input[type=text],
     input[type=number],
-    input[type=date] { margin: 0 auto; clear: both; width: 200px; margin: 20px; }
+    input[type=date] { width: 90%; }
+    
+    #price-slider { width: 40%; }
     
     input[type=submit],
-    input[type=reset] { width: 200px; clear: both; }
+    input[type=reset] { width: 37%; clear: both; }
     
+    #max { background-position: 23%; }
+        
 }
 
-@media all and (min-width: 781px) and (max-width: 1080px){
+@media all and (min-width: 781px) {
     
-    .main { margin: 0 auto; width: 780px; }
+    .main { width: 80%; }
     
-    .formBox { margin-left: 95px; float: left; margin-top: 20px; }
+    .formBox { float: left; width: 25%; margin-top: 6rem; margin-bottom: 5rem;}
     
-    label { clear: both; }
-    
+    label { clear: both; width: 100%}
+        
     input[type=text],
     input[type=number],
-    input[type=date] { clear: both; }
+    input[type=date] { clear: both; width: 90%}
+    
+    #price-slider { width: 30%; }
     
     input[type=submit],
-    input[type=reset] { clear: both; }
+    input[type=reset] { clear: both; width: 20%; }
     
+    #max { background-position: 35%; }
+        
 }
 
 @media all and (min-width: 1081px) {
     
-    .main { margin: 0 auto; width: 1080px; }
+    h1 { font-size: 6.854rem; }
+
+    h2 { font-size: 4.236rem; }
+
+    p { font-size: 2.618rem; }
     
-    .formBox { margin-left: 15px; float: left; margin-top: 55px; margin-bottom: 55px; }
+    .foot p { font-size: 2rem }
     
-    label { clear: both; }
+    #price-slider { width: 20%; }
     
-    input[type=text],
-    input[type=number],
-    input[type=date] { clear: both; }
-    
-    input[type=submit],
-    input[type=reset] { clear: both; }
-}
+ }
 
 @media all and (min-width: 1501px) {
 
-    .masthead { background: url(https://unsplash.it/2560/210?image=421); }
+    .masthead { background: url(https://unsplash.it/2560/110?image=421); }
 
-    .foot { background: url(https://unsplash.it/2560/210?image=421); }
+    .foot { background: url(https://unsplash.it/2560/60?image=421); }
 }
